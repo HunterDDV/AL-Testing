@@ -1,13 +1,13 @@
 body {
-  width: 80%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgb(68, 147, 250) 0%, rgb(5, 0, 97) 60%);
+  background: rgb(0,91,255);
+background: linear-gradient(90deg, rgba(0,91,255,1) 0%, rgba(54,172,60,1) 50%, rgba(0,91,255,1) 100%);
 }
 
 code {

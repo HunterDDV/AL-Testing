@@ -12,42 +12,47 @@ export default () => {
     // import api
     useEffect(() => {
         Axios.get(`${config.base}`)
-        .then(res => {
-            setUsers(res.data);
-        })
-        .catch(err => {
-            console.log(err)
-        })
+            .then(res => {
+                setUsers(res.data);
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }, [])
 
     // filter names on search
     useEffect(() => {
         setFilteredUsers(
-            users.filter( user => {
-                return user.name.toLocaleLowerCase().includes( search.toLocaleLowerCase() )
+            users.filter(user => {
+                return user.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
             })
         )
     }, [search, users])
 
     // sort array alphabetically
     users.sort((a, b) => a.name.localeCompare(b.name))
-    
-  return (
-    <div className="container">
-        <div className="search-box">
-        <input
-                type="text"
-                className="search-bar"
-                placeholder="Search..."
-                onChange={e => setSearch(e.target.value)}
-            />
-            </div>
-             <h1 className="heading">Look for your next potential employee here:</h1>
 
-             <ul className="users">
+    return (
+        <div className="container">
+            <div className = "Header">
+                <h1 className="heading">Browse the employee list</h1>
+                <h1 className="headingSub">Choose the perfect candidate to employ for your position!</h1>
+            </div>
+            
+            <div className="search-box">
+                <input
+                    type="text"
+                    className="search-bar"
+                    placeholder="Search..."
+                    onChange={e => setSearch(e.target.value)}
+                />
+            </div>
+
+
+            <ul className="users">
                 {
                     filteredUsers.map(user => <li key={user.name}>
-    
+
                         {/* user details */}
                         <span className="name">{user.name}</span><br />
                         <span className="username">Username: {user.username}</span><br />
@@ -60,10 +65,10 @@ export default () => {
                         <span className="companyname">Company:</span> <span className="company">{user.company.name}</span><br />
                         <span className="code">{user.company.catchPhrase}</span><br />
                         <span className="code">{user.company.bs}</span><br />
-                        </li>)
+                    </li>)
                 }
             </ul>
-    </div>
-  )
+        </div>
+    )
 }
 

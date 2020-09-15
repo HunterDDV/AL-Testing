@@ -3,7 +3,8 @@
 }
 
 .search-box {
-  width: 100%;
+  display: inline-block;
+  width: 80%;
   margin: 0 0 75px;
 }
 
@@ -27,9 +28,30 @@
   background-color: rgba(225, 225, 225, 0.452);
 }
 
-.heading {
-  text-align: center;
+.Header{
+  background: rgba(175, 211, 255, 0.739);;
+  width: 60%;
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 15px;
+  border-radius: 100px 100px 100px 100px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  
   color: #fff;
+  text-shadow: 2px 2px #313131;
+  text-align: center;
+  font-family: Georgia, 'Garamond', Times, serif;
+}
+
+.Header .heading {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.Header .headingSub {
+  font-size: 20px;
+  font-style: normal;
 }
 
 .users {
