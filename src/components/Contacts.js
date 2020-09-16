@@ -34,11 +34,11 @@ export default () => {
 
     return (
         <div className="container">
-            <div className = "Header">
+            <div className="Header">
                 <h1 className="heading">Browse the employee list</h1>
                 <h1 className="headingSub">Choose the perfect candidate to employ for your position!</h1>
             </div>
-            
+
             <div className="search-box">
                 <input
                     type="text"
@@ -48,26 +48,27 @@ export default () => {
                 />
             </div>
 
+            <div className = "ScrollMenu">
+                <ul className="users">
+                    {
+                        filteredUsers.map(user => <li key={user.name}>
 
-            <ul className="users">
-                {
-                    filteredUsers.map(user => <li key={user.name}>
-
-                        {/* user details */}
-                        <span className="name">{user.name}</span><br />
-                        <span className="username">Username: {user.username}</span><br />
-                        <span>E-mail: </span><span className="email">{user.email}</span><br />
-                        <span className="phone">Phone: {user.phone}</span><br />
-                        <span className="web">Website: {user.website}</span><br />
-                        <span className="addressname">Address:</span> <span className="address">{user.address.street}</span><br />
-                        <span className="code">{user.address.suite}</span><br />
-                        <span className="code">{user.address.zipcode}</span><br />
-                        <span className="companyname">Company:</span> <span className="company">{user.company.name}</span><br />
-                        <span className="code">{user.company.catchPhrase}</span><br />
-                        <span className="code">{user.company.bs}</span><br />
-                    </li>)
-                }
-            </ul>
+                            {/* user details */}
+                            <span className="name">{user.name}</span><br />
+                            <span className="username">Username: {user.username}</span><br />
+                            <span>E-mail: </span><span className="email">{user.email}</span><br />
+                            <span className="phone">Phone: {user.phone}</span><br />
+                            <span className="web">Website: {user.website}</span><br />
+                            <span className="addressname">Address:</span> <span className="address">{user.address.street}</span><br />
+                            <span className="code">{user.address.suite}</span><br />
+                            <span className="code">{user.address.zipcode}</span><br />
+                            <span className="companyname">Company:</span> <span className="company">{user.company.name}</span><br />
+                            <span className="code">{user.company.catchPhrase}</span><br />
+                            <span className="code">{user.company.bs}</span><br />
+                        </li>)
+                    }
+                </ul>
+            </div>
         </div>
     )
 }

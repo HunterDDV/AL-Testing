@@ -2,10 +2,36 @@
   text-align: center;
 }
 
+.Header{
+  background: rgba(175, 211, 255, 0.739);;
+  width: 60%;
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 15px;
+  border-radius: 100px 100px 100px 100px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  
+  color: #fff;
+  text-shadow: 2px 2px #313131;
+  text-align: center;
+  font-family: Georgia, 'Garamond', Times, serif;
+}
+
+.Header .heading {
+  font-size: 30px;
+  font-style: normal;
+}
+
+.Header .headingSub {
+  font-size: 20px;
+  font-style: italic;
+}
+
 .search-box {
   display: inline-block;
   width: 80%;
-  margin: 0 0 75px;
+  margin: 0 0 50px;
 }
 
 .search-box .search-bar {
@@ -28,49 +54,39 @@
   background-color: rgba(225, 225, 225, 0.452);
 }
 
-.Header{
-  background: rgba(175, 211, 255, 0.739);;
-  width: 60%;
-  display: inline-block;
-  padding-top: 0;
-  padding-bottom: 15px;
-  border-radius: 100px 100px 100px 100px;
-  margin-bottom: 20px;
+
+
+.ScrollMenu{
+  background-color: #fff;
+  border: 15px;
+  width: 100%;
   border: 2px solid black;
-  
-  color: #fff;
-  text-shadow: 2px 2px #313131;
-  text-align: center;
-  font-family: Georgia, 'Garamond', Times, serif;
-}
-
-.Header .heading {
-  font-size: 30px;
-  font-style: italic;
-}
-
-.Header .headingSub {
-  font-size: 20px;
-  font-style: normal;
 }
 
 .users {
   text-align: left;
-  list-style: none;
   line-height: 1.75;
-  width: 40%;
-  margin-left: 0;
-  display: inline-table;
+  display: inline-block;
+  overflow: auto;
+  overflow-y: hidden;
+  max-width: 90%;
+  margin-top: 20px;
+  white-space: nowrap;
 }
 
 .users li {
   border: 1px solid black;
   padding: 1.2rem;
   background: rgba(175, 211, 255, 0.739);
-  width: 100%;
+  width: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 8px rgb(68, 147, 250);
-  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .name {
