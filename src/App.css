@@ -3,15 +3,15 @@
 }
 
 .Header{
-  background: rgba(175, 211, 255, 0.739);;
+  background: rgba(225, 225, 225, 0.5);
   width: 60%;
+  min-width: 300px;
   display: inline-block;
   padding-top: 0;
   padding-bottom: 15px;
   border-radius: 100px 100px 100px 100px;
   margin-bottom: 20px;
   border: 2px solid black;
-  
   color: #fff;
   text-shadow: 2px 2px #313131;
   text-align: center;
@@ -57,7 +57,8 @@
 
 
 .ScrollMenu{
-  background-color: #fff;
+  background: rgb(17,40,235);
+  background: linear-gradient(90deg, rgba(17,40,235,0.9471989479385504) 0%, rgba(128,226,230,1) 100%);
   border: 15px;
   width: 100%;
   border: 2px solid black;
@@ -69,8 +70,9 @@
   display: inline-block;
   overflow: auto;
   overflow-y: hidden;
-  max-width: 90%;
+  max-width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   white-space: nowrap;
 }
 
@@ -78,15 +80,15 @@
   border: 1px solid black;
   padding: 1.2rem;
   background: rgba(175, 211, 255, 0.739);
-  width: 500px;
+  max-width: 40%;
+  min-width: 250px;
   border-radius: 20px;
   box-shadow: 5px 5px 8px rgb(68, 147, 250);
   margin-left: 20px;
   margin-right: 20px;
-
-
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
+  white-space: normal;
 }
 
 .name {
