@@ -69,6 +69,9 @@ export default () => {
                     }
                 </ul>
             </div>
+            <div className = "footer">
+                    <p>Making sure you make the right choice!</p>
+            </div>
         </div>
     )
 }

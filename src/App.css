@@ -3,13 +3,11 @@
 }
 
 .Header{
-  background: rgba(225, 225, 225, 0.5);
-  width: 60%;
-  min-width: 300px;
+  background-image: url(cloudpass.png);
+  width: 100%;
   display: inline-block;
   padding-top: 0;
   padding-bottom: 15px;
-  border-radius: 100px 100px 100px 100px;
   margin-bottom: 20px;
   border: 2px solid black;
   color: #fff;
@@ -32,11 +30,11 @@
   display: inline-block;
   width: 80%;
   margin: 0 0 50px;
+  width: 100%;
 }
 
 .search-box .search-bar {
-  display: block;
-  width: 100%;
+  display: inline-block;
   padding: 15px;
   appearance: none;
   background: none;
@@ -44,10 +42,11 @@
   outline: none;
   background-color: rgba(225, 225, 225, 0.5);
   border-radius: 0px 0px 16px 16px;
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.2);
   color: #313131;
   font-size: 20px;
   transition: 0.2s ease;
+  width: 80%;
 }
 
 .search-box .search-bar:focus {
@@ -60,8 +59,8 @@
   background: rgb(17,40,235);
   background: linear-gradient(90deg, rgba(17,40,235,0.9471989479385504) 0%, rgba(128,226,230,1) 100%);
   border: 15px;
-  width: 100%;
   border: 2px solid black;
+  margin-bottom: 50px;
 }
 
 .users {
@@ -70,9 +69,9 @@
   display: inline-block;
   overflow: auto;
   overflow-y: hidden;
-  max-width: 100%;
+  width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   white-space: nowrap;
 }
 
@@ -123,3 +122,19 @@
 .address, .code {
   font-style: italic;
 }
+
+.footer {
+  background: rgba(6,60,133,0.9471989479385504);
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-bottom: 0;
+
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  text-shadow: 2px 2px #313131;
+  font-family: Georgia, 'Garamond', Times, serif;
+  border: 1px solid black;
+  }
