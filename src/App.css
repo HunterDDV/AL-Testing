@@ -57,10 +57,12 @@
 
 .ScrollMenu{
   background: rgb(17,40,235);
-  background: linear-gradient(90deg, rgba(17,40,235,0.9471989479385504) 0%, rgba(128,226,230,1) 100%);
+  background: linear-gradient(90deg, rgba(6,60,133,0.9471989479385504) 0%, rgba(128,226,230,1) 100%);
   border: 15px;
   border: 2px solid black;
   margin-bottom: 50px;
+  margin-right: 0;
+  padding-right: 50px;
 }
 
 .users {
@@ -79,24 +81,25 @@
   border: 1px solid black;
   padding: 1.2rem;
   background: rgba(175, 211, 255, 0.739);
-  max-width: 40%;
-  min-width: 250px;
+  min-width: 300px;
+  width: 30%;
   border-radius: 20px;
   box-shadow: 5px 5px 8px rgb(68, 147, 250);
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 50px;
   display: inline-block;
   vertical-align: top;
   white-space: normal;
+  word-wrap: break-word;
+  height: 100%;
 }
 
 .name {
   font-size: 36px;
-  color: #fff;
+  color: rgba(6,60,133,0.9471989479385504);
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  text-shadow: 2px 2px #313131;
+    text-align: center;
 }
 
 .username {
@@ -105,7 +108,7 @@
 }
 
 .email {
-  color: #fff;
+  color: rgba(6,60,133,0.9471989479385504);
   text-transform: lowercase;
   cursor: pointer;
 }
@@ -117,6 +120,9 @@
 
 .code {
   padding-left: 65px;
+  border-radius: 70px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .address, .code {
@@ -129,8 +135,6 @@
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
-  margin-bottom: 0;
-
   color: #fff;
   font-size: 20px;
   font-style: italic;
